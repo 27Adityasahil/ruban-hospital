@@ -29,18 +29,6 @@ const Preloader = () => {
   return (
     <div className="preloader-overlay">
       <div className="preloader-content">
-        {/* Logo */}
-        <div className="preloader-logo mb-4">
-          <div className="d-flex align-items-center justify-content-center">
-            <div className="bg-danger text-white rounded-3 p-3 me-2">
-              <Heart size={32} />
-            </div>
-            <div className="bg-primary text-white rounded-circle p-3">
-              <Plus size={24} />
-            </div>
-          </div>
-        </div>
-
         {/* Typing Text */}
         <div className="preloader-text">
           <h1 className="display-4 fw-bold font-display text-center">

@@ -75,7 +75,7 @@ const SpecialistsSection = () => {
         </div>
 
         {/* Specialists Grid */}
-        <div className="row g-4 d-flex align-items-center justify-center">
+        <div className="row g-4 d-flex align-items-center justify-content-center">
           {specialists.map((doctor, index) => (
             <div key={index} className="col-lg-3 col-md-6">
               <div className="card card-custom h-100 border-0 overflow-hidden">

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { 
   ChevronDown, 
-  Menu, 
+  Stethoscope, 
   X, 
   Phone, 
   Mail, 
@@ -13,7 +13,6 @@ import {
   Bone,
   Eye,
   Baby,
-  Stethoscope,
   Activity,
   Shield,
   Users,
@@ -276,29 +275,25 @@ const Header = () => {
       {/* Main Navigation */}
       <nav className={`navbar navbar-expand-lg sticky-top navbar-custom ${isScrolled ? 'shadow-custom' : ''}`}>
         <div className="container">
-          {/* Logo */}
           <a className="navbar-brand d-flex align-items-center" href="#">
-            <div className="d-flex align-items-center">
-              <div className="bg-danger text-white rounded-3 p-2 me-2">
-                <Heart size={24} />
-              </div>
-              <div className="bg-primary text-white rounded-circle p-2 me-3">
-                <Plus size={20} />
-              </div>
-            </div>
             <div>
               <h4 className="mb-0 font-display fw-bold text-danger">RUBAN</h4>
               <small className="text-muted">Redefining Healthcare</small>
             </div>
           </a>
 
-          {/* Mobile Menu Toggle */}
+          {/* Mobile Menu Toggle with Stethoscope */}
           <button
-            className="navbar-toggler border-0"
+            className="navbar-toggler border-0 p-2"
             type="button"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            style={{ background: 'none' }}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? (
+              <X size={28} className="text-danger" />
+            ) : (
+              <Stethoscope size={28} className="text-primary" />
+            )}
           </button>
 
           {/* Navigation Menu */}
@@ -312,11 +307,25 @@ const Header = () => {
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
                   <a
-                    className="nav-link fw-medium px-3 py-3 d-flex align-items-center text-dark"
+                    className="nav-link fw-medium px-3 py-3 d-flex align-items-center text-dark position-relative"
                     href={item.href}
+                    style={{ 
+                      fontSize: '0.95rem',
+                      transition: 'all 0.3s ease',
+                      color: activeDropdown === item.name ? 'var(--bs-primary)' : 'inherit'
+                    }}
                   >
                     {item.name}
-                    {item.children && <Plus size={14} className="ms-1" />}
+                    {item.children && (
+                      <ChevronDown 
+                        size={14} 
+                        className="ms-1" 
+                        style={{ 
+                          transform: activeDropdown === item.name ? 'rotate(180deg)' : 'rotate(0deg)',
+                          transition: 'transform 0.3s ease'
+                        }}
+                      />
+                    )}
                   </a>
 
                   {/* Mega Menu Dropdown */}
@@ -335,6 +344,7 @@ const Header = () => {
                                     <a
                                       href={child.href}
                                       className="text-decoration-none d-flex align-items-start p-2 rounded-3 hover-bg-light"
+                                      style={{ transition: 'all 0.2s ease' }}
                                     >
                                       <div className="bg-danger bg-opacity-10 text-danger rounded-2 p-2 me-3 flex-shrink-0">
                                         <child.icon size={14} />
