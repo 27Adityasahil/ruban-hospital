@@ -36,7 +36,7 @@ const SpecialistsSection = () => {
       specializations: ['Angioplasty', 'Bypass Surgery', 'Heart Transplant']
     },
     {
-      name: 'Dr.-Bibha-Singh',
+      name: 'Dr. Bibha-Singh',
       specialty: 'Senior Cardiologist',
       subSpecialty: 'Interventional Cardiology',
       experience: '15+ Years',
@@ -125,61 +125,22 @@ const SpecialistsSection = () => {
                 <div className="card-body p-4">
                   {/* Doctor Info */}
                   <div className="mb-3">
-                    <h5 className="fw-bold mb-1 text-dark">{doctor.name}</h5>
-                    {/* <p className="text-primary fw-semibold mb-1">{doctor.specialty}</p> */}
-                    {/* <p className="text-muted small mb-1">{doctor.subSpecialty}</p> */}
-                    {/* <p className="text-muted small">{doctor.education}</p> */}
+                    <h5 className="fw-bold mb-1 text-dark text-center">{doctor.name}</h5>
                   </div>
 
-                  {/* Location & Availability */}
-                  <div className="mb-3">
-                    <div className="d-flex align-items-center mb-2">
-                      {/* <MapPin size={14} className="text-muted me-2" /> */}
-                      {/* <small className="text-muted">{doctor.location}</small> */}
-                    </div>
-                    <div className="d-flex align-items-center">
-                      {/* <Clock size={14} className="text-muted me-2" /> */}
-                      {/* <small className="text-muted">{doctor.availability}</small> */}
-                    </div>
-                  </div>
+                  
 
-                  {/* Specializations */}
-                  {/* <div className="mb-3">
-                    <h6 className="small fw-bold text-dark mb-2">Specializations:</h6>
-                    <div className="d-flex flex-wrap gap-1">
-                      {doctor.specializations.slice(0, 2).map((spec, specIndex) => (
-                        <span key={specIndex} className="badge bg-primary bg-opacity-10 text-primary rounded-pill">
-                          {spec}
-                        </span>
-                      ))}
-                      {doctor.specializations.length > 2 && (
-                        <span className="badge bg-light text-muted rounded-pill">
-                          +{doctor.specializations.length - 2} more
-                        </span>
-                      )}
-                    </div>
-                  </div> */}
+                  
 
-                  {/* Key Achievements */}
-                  {/* <div className="mb-4">
-                    <h6 className="small fw-bold text-dark mb-2">Key Achievements:</h6>
-                    <div className="small">
-                      {doctor.achievements.slice(0, 2).map((achievement, achIndex) => (
-                        <div key={achIndex} className="d-flex align-items-start mb-1">
-                          <div className="bg-success rounded-circle me-2 flex-shrink-0 mt-1" style={{ width: '6px', height: '6px' }}></div>
-                          <span className="text-muted">{achievement}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div> */}
+                  
                   
                   {/* Action Buttons */}
                   <div className="d-grid gap-2">
-                    <button className="btn btn-custom text-white d-flex align-items-center justify-center fw-medium">
+                    <button className="btn btn-custom text-white d-flex align-items-center justify-content-center fw-medium">
                       <Calendar size={16} className="me-2" />
                       Book Appointment
                     </button>
-                    <button className="btn btn-outline-primary  btn-sm d-flex align-items-center justify-center">
+                    <button className="btn btn-outline-primary  btn-sm d-flex align-items-center justify-content-center">
                       <Users size={14} className="me-2" />
                       View Full Profile
                     </button>

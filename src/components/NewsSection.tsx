@@ -57,8 +57,6 @@ const NewsSection = () => {
       day: 'numeric' 
     });
   };
-
-  // Extract the featured news icon component
   const FeaturedNewsIcon = newsItems[0].icon;
 
   return (
@@ -187,43 +185,6 @@ const NewsSection = () => {
               </div>
             );
           })}
-        </div>
-
-        {/* Newsletter Signup */}
-        <div className="row justify-content-center mt-5">
-          <div className="col-lg-8">
-            <div 
-              className="card border-0 shadow-custom text-center rounded-4"
-              style={{ background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)' }}
-            >
-              <div className="card-body p-5">
-                <h3 className="h2 fw-bold mb-3 font-display">
-                  Stay Updated with Our Newsletter
-                </h3>
-                <p className="text-muted mb-4">
-                  Get the latest health tips, medical breakthroughs, and hospital updates 
-                  delivered directly to your inbox.
-                </p>
-                <div className="row justify-content-center">
-                  <div className="col-lg-8">
-                    <div className="input-group mb-3">
-                      <input 
-                        type="email" 
-                        className="form-control form-control-lg border-0 shadow-sm" 
-                        placeholder="Enter your email address"
-                      />
-                      <button className="btn btn-custom text-white px-4" type="button">
-                        Subscribe
-                      </button>
-                    </div>
-                    <p className="small text-muted mb-0">
-                      We respect your privacy. Unsubscribe at any time.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

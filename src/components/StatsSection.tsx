@@ -111,7 +111,6 @@ const StatsSection = () => {
         }
       },
       { threshold: 0.1 }
-      // { threshold: 0.3, rootMargin: '0px 0px -50px 0px' }
     );
 
     if (sectionRef.current) {
@@ -193,7 +192,7 @@ const StatsSection = () => {
                 <div className="card-body p-4 position-relative">
                   {/* Icon */}
                   <div 
-                    className="d-inline-flex align-items-center justify-center rounded-4 mb-4 shadow-sm"
+                    className="d-inline-flex align-items-center justify-content-center rounded-4 mb-4 shadow-sm"
                     style={{
                       width: '80px',
                       height: '80px',
