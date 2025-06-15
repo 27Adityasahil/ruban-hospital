@@ -110,7 +110,8 @@ const StatsSection = () => {
           animateCounters();
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.1 }
+      // { threshold: 0.3, rootMargin: '0px 0px -50px 0px' }
     );
 
     if (sectionRef.current) {
@@ -246,11 +247,11 @@ const StatsSection = () => {
                   Join thousands of satisfied patients who have trusted us with their healthcare needs.
                 </p>
                 <div className="d-flex flex-wrap justify-content-center gap-3">
-                  <button className="btn btn-custom text-white px-5 py-3 rounded-pill">
+                  <button className="btn btn-custom d-flex align-items-center text-white px-5 py-3 rounded-pill">
                     <Users size={18} className="me-2" />
                     Schedule Consultation
                   </button>
-                  <button className="btn btn-outline-primary px-5 py-3 rounded-pill">
+                  <button className="btn btn-outline-primary d-flex align-items-center px-5 py-3 rounded-pill">
                     <Activity size={18} className="me-2" />
                     Explore Services
                   </button>

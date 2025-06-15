@@ -122,7 +122,7 @@ const NewsSection = () => {
                       <p className="text-muted lead">{newsItems[0].excerpt}</p>
                     </div>
                     <div className="mt-auto">
-                      <button className="btn btn-custom text-white fw-medium">
+                      <button className="btn btn-custom d-flex align-items-center text-white fw-medium">
                         Read Full Story
                         <ArrowRight size={16} className="ms-2" />
                       </button>
@@ -177,7 +177,7 @@ const NewsSection = () => {
                     </div>
                     
                     <div className="mt-auto">
-                      <button className="btn btn-outline-primary btn-sm fw-medium">
+                      <button className="btn btn-outline-primary btn-sm d-flex align-items-center fw-medium">
                         Read More
                         <ArrowRight size={14} className="ms-2" />
                       </button>

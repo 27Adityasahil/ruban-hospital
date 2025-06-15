@@ -1,15 +1,19 @@
 import React from 'react';
 import { Star, Calendar, Award, MapPin, Clock, Users, ArrowRight } from 'lucide-react';
+import AnilImg from '../assets/management/Dr.-Gp.-Capt.-Anil-Kumar-Singh.png';
+import SatyajeetImg from '../assets/management/satyajeet.jpg';
+import BibhaImg from '../assets/management/Dr.-Bibha-Singh.jpg'
+
 
 const SpecialistsSection = () => {
   const specialists = [
     {
-      name: 'Dr. Rajesh Kumar',
+      name: 'Dr. Gp. Capt. Anil Kumar Singh',
       specialty: 'Senior Cardiologist',
       subSpecialty: 'Interventional Cardiology',
       experience: '15+ Years',
       education: 'MBBS, MD, DM Cardiology',
-      image: 'https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: AnilImg,
       rating: 4.9,
       reviews: 847,
       location: 'Cardiac Center',
@@ -18,47 +22,35 @@ const SpecialistsSection = () => {
       specializations: ['Angioplasty', 'Bypass Surgery', 'Heart Transplant']
     },
     {
-      name: 'Dr. Priya Sharma',
-      specialty: 'Senior Neurologist',
-      subSpecialty: 'Neurocritical Care',
-      experience: '12+ Years',
-      education: 'MBBS, MD, DM Neurology',
-      image: 'https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=400',
-      rating: 4.8,
-      reviews: 692,
-      location: 'Neuroscience Center',
-      availability: 'Tue, Thu, Sat',
-      achievements: ['Young Investigator Award', 'Stroke Care Specialist', 'Research Leader'],
-      specializations: ['Stroke Treatment', 'Epilepsy Care', 'Movement Disorders']
-    },
-    {
-      name: 'Dr. Amit Patel',
-      specialty: 'Senior Orthopedic Surgeon',
-      subSpecialty: 'Joint Replacement',
-      experience: '18+ Years',
-      education: 'MBBS, MS Orthopedics',
-      image: 'https://images.pexels.com/photos/6749778/pexels-photo-6749778.jpeg?auto=compress&cs=tinysrgb&w=400',
+      name: 'Dr. Satyajeet',
+      specialty: 'Senior Cardiologist',
+      subSpecialty: 'Interventional Cardiology',
+      experience: '15+ Years',
+      education: 'MBBS, MD, DM Cardiology',
+      image: SatyajeetImg,
       rating: 4.9,
-      reviews: 1205,
-      location: 'Orthopedic Institute',
-      availability: 'Mon - Fri',
-      achievements: ['Joint Replacement Expert', '5000+ Successful Surgeries', 'Robotic Surgery Pioneer'],
-      specializations: ['Knee Replacement', 'Hip Surgery', 'Sports Medicine']
+      reviews: 847,
+      location: 'Cardiac Center',
+      availability: 'Mon, Wed, Fri',
+      achievements: ['Padma Shri Awardee', 'Published 50+ Research Papers', 'International Speaker'],
+      specializations: ['Angioplasty', 'Bypass Surgery', 'Heart Transplant']
     },
     {
-      name: 'Dr. Sneha Reddy',
-      specialty: 'Senior Pediatrician',
-      subSpecialty: 'Neonatology',
-      experience: '10+ Years',
-      education: 'MBBS, MD Pediatrics',
-      image: 'https://images.pexels.com/photos/5452268/pexels-photo-5452268.jpeg?auto=compress&cs=tinysrgb&w=400',
-      rating: 4.7,
-      reviews: 523,
-      location: 'Children\'s Hospital',
-      availability: 'Mon - Sat',
-      achievements: ['NICU Care Specialist', 'Child Development Expert', 'Vaccination Program Leader'],
-      specializations: ['Newborn Care', 'Pediatric Surgery', 'Child Psychology']
-    }
+      name: 'Dr.-Bibha-Singh',
+      specialty: 'Senior Cardiologist',
+      subSpecialty: 'Interventional Cardiology',
+      experience: '15+ Years',
+      education: 'MBBS, MD, DM Cardiology',
+      image: BibhaImg,
+      rating: 4.9,
+      reviews: 847,
+      location: 'Cardiac Center',
+      availability: 'Mon, Wed, Fri',
+      achievements: ['Padma Shri Awardee', 'Published 50+ Research Papers', 'International Speaker'],
+      specializations: ['Angioplasty', 'Bypass Surgery', 'Heart Transplant']
+    },
+    
+    
   ];
 
   return (
@@ -83,7 +75,7 @@ const SpecialistsSection = () => {
         </div>
 
         {/* Specialists Grid */}
-        <div className="row g-4">
+        <div className="row g-4 d-flex align-items-center justify-center">
           {specialists.map((doctor, index) => (
             <div key={index} className="col-lg-3 col-md-6">
               <div className="card card-custom h-100 border-0 overflow-hidden">
@@ -134,25 +126,25 @@ const SpecialistsSection = () => {
                   {/* Doctor Info */}
                   <div className="mb-3">
                     <h5 className="fw-bold mb-1 text-dark">{doctor.name}</h5>
-                    <p className="text-primary fw-semibold mb-1">{doctor.specialty}</p>
-                    <p className="text-muted small mb-1">{doctor.subSpecialty}</p>
-                    <p className="text-muted small">{doctor.education}</p>
+                    {/* <p className="text-primary fw-semibold mb-1">{doctor.specialty}</p> */}
+                    {/* <p className="text-muted small mb-1">{doctor.subSpecialty}</p> */}
+                    {/* <p className="text-muted small">{doctor.education}</p> */}
                   </div>
 
                   {/* Location & Availability */}
                   <div className="mb-3">
                     <div className="d-flex align-items-center mb-2">
-                      <MapPin size={14} className="text-muted me-2" />
-                      <small className="text-muted">{doctor.location}</small>
+                      {/* <MapPin size={14} className="text-muted me-2" /> */}
+                      {/* <small className="text-muted">{doctor.location}</small> */}
                     </div>
                     <div className="d-flex align-items-center">
-                      <Clock size={14} className="text-muted me-2" />
-                      <small className="text-muted">{doctor.availability}</small>
+                      {/* <Clock size={14} className="text-muted me-2" /> */}
+                      {/* <small className="text-muted">{doctor.availability}</small> */}
                     </div>
                   </div>
 
                   {/* Specializations */}
-                  <div className="mb-3">
+                  {/* <div className="mb-3">
                     <h6 className="small fw-bold text-dark mb-2">Specializations:</h6>
                     <div className="d-flex flex-wrap gap-1">
                       {doctor.specializations.slice(0, 2).map((spec, specIndex) => (
@@ -166,10 +158,10 @@ const SpecialistsSection = () => {
                         </span>
                       )}
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* Key Achievements */}
-                  <div className="mb-4">
+                  {/* <div className="mb-4">
                     <h6 className="small fw-bold text-dark mb-2">Key Achievements:</h6>
                     <div className="small">
                       {doctor.achievements.slice(0, 2).map((achievement, achIndex) => (
@@ -179,15 +171,15 @@ const SpecialistsSection = () => {
                         </div>
                       ))}
                     </div>
-                  </div>
+                  </div> */}
                   
                   {/* Action Buttons */}
                   <div className="d-grid gap-2">
-                    <button className="btn btn-custom text-white fw-medium">
+                    <button className="btn btn-custom text-white d-flex align-items-center justify-center fw-medium">
                       <Calendar size={16} className="me-2" />
                       Book Appointment
                     </button>
-                    <button className="btn btn-outline-primary btn-sm">
+                    <button className="btn btn-outline-primary  btn-sm d-flex align-items-center justify-center">
                       <Users size={14} className="me-2" />
                       View Full Profile
                     </button>
@@ -215,11 +207,11 @@ const SpecialistsSection = () => {
                   </div>
                   <div className="col-lg-4">
                     <div className="d-grid gap-2">
-                      <button className="btn btn-custom text-white px-4 py-3 fw-medium">
+                      <button className="btn btn-custom text-white d-flex align-items-center justify-center px-4 py-3 fw-medium">
                         <Users size={18} className="me-2" />
                         View All Doctors
                       </button>
-                      <button className="btn btn-outline-primary px-4 py-2">
+                      <button className="btn btn-outline-primary d-flex align-items-center justify-center px-4 py-2">
                         <ArrowRight size={16} className="me-2" />
                         Get Help Choosing
                       </button>

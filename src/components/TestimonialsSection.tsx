@@ -135,7 +135,7 @@ const TestimonialsSection = () => {
                       {renderStars(testimonial.rating)}
                     </div>
                     {testimonial.verified && (
-                      <span className="badge bg-success bg-opacity-10 text-success rounded-pill ms-auto">
+                      <span className="badge bg-success bg-opacity-10 text-success d-flex align-items-center rounded-pill ms-auto">
                         <Heart size={12} className="me-1" />
                         Verified
                       </span>
@@ -184,7 +184,7 @@ const TestimonialsSection = () => {
               style={{ background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)' }}
             >
               <div className="card-body p-5">
-                <div className="row text-center">
+                <div className="row text-center d-flex align-items-center">
                   <div className="col-lg-3 col-6 mb-3 mb-lg-0">
                     <h2 className="display-6 fw-bold text-primary mb-1">4.9</h2>
                     <div className="d-flex justify-content-center mb-2">
@@ -221,11 +221,11 @@ const TestimonialsSection = () => {
               Book your consultation today and join our community of satisfied patients.
             </p>
             <div className="d-flex flex-wrap justify-content-center gap-3">
-              <button className="btn btn-custom text-white px-5 py-3 fw-medium">
+              <button className="btn btn-custom text-white d-flex align-items-center px-5 py-3 fw-medium">
                 <Calendar size={18} className="me-2" />
                 Book Consultation
               </button>
-              <button className="btn btn-outline-primary px-5 py-3">
+              <button className="btn btn-outline-primary d-flex align-items-center px-5 py-3">
                 <Star size={18} className="me-2" />
                 Read All Reviews
               </button>

@@ -181,11 +181,11 @@ const ExcellenceSection = () => {
                   and schedule your appointment with the most suitable expert for your needs.
                 </p>
                 <div className="d-flex flex-wrap justify-content-center gap-3">
-                  <button className="btn btn-custom text-white px-5 py-3 rounded-pill">
+                  <button className="btn btn-custom d-flex align-items-center text-white px-5 py-3 rounded-pill">
                     <Users size={18} className="me-2" />
                     Consult Our Experts
                   </button>
-                  <button className="btn btn-outline-primary px-5 py-3 rounded-pill">
+                  <button className="btn btn-outline-primary d-flex align-items-center px-5 py-3 rounded-pill">
                     <Activity size={18} className="me-2" />
                     Download Brochure
                   </button>
