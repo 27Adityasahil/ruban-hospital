@@ -1,16 +1,11 @@
-import React from "react";
+
 import {
   Phone,
   Mail,
   MapPin,
   Clock,
   Heart,
-  Facebook,
-  Twitter,
-  Instagram,
-  Youtube,
   ArrowRight,
-  Award,
   Shield,
   Users,
   Activity,
