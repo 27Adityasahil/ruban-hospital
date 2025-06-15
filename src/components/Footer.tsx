@@ -251,7 +251,6 @@ const Footer = () => {
       {/* Bottom Footer */}
       <div className="border-top border-light border-opacity-25 ">
         <div className="container d-flex align-items-center justify-center py-4">
-          {/* <div className="row align-items-center  "> */}
           <div className="d-flex align-items-center justify-center col-lg-6">
             <p className="text-light  opacity-75 mb-0 small">
               © {currentYear} Ruban Hospital. All rights reserved.
@@ -261,25 +260,9 @@ const Footer = () => {
               </span>
             </p>
           </div>
-          {/* <div className="col-lg-6">
-              <div className="d-flex flex-wrap justify-content-lg-end gap-3 mt-3 mt-lg-0">
-                <a href="#" className="text-light text-decoration-none opacity-75 hover-opacity-100 small">
-                  Privacy Policy
-                </a>
-                <a href="#" className="text-light text-decoration-none opacity-75 hover-opacity-100 small">
-                  Terms of Service
-                </a>
-                <a href="#" className="text-light text-decoration-none opacity-75 hover-opacity-100 small">
-                  Medical Disclaimer
-                </a>
-                <a href="#" className="text-light text-decoration-none opacity-75 hover-opacity-100 small">
-                  Sitemap
-                </a>
-              </div>
-            </div> */}
+          
         </div>
       </div>
-      {/* </div> */}
     </footer>
   );
 };
