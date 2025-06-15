@@ -98,7 +98,7 @@ const Footer = () => {
               </div>
 
               {/* Social Media */}
-              <div className="d-flex gap-3">
+              {/* <div className="d-flex gap-3">
                 <a href="#" className="text-decoration-none">
                   <div className="bg-primary bg-opacity-20 p-3 rounded-3 text-primary hover-scale">
                     <Facebook size={20} />
@@ -119,7 +119,7 @@ const Footer = () => {
                     <Youtube size={20} />
                   </div>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
 
