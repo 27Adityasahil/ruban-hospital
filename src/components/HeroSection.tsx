@@ -122,15 +122,6 @@ const HeroSection = () => {
                 className="position-relative rounded-4 overflow-hidden shadow-custom-lg"
                 style={{ height: "500px" }}
               >
-                {/* YouTube Video Embed */}
-                {/* <iframe
-                  className="w-100 h-100 border-0 rounded-4"
-                  src="https://www.youtube.com/embed/yHCsfTTe0nQ?autoplay=1&mute=1&loop=1&playlist=yHCsfTTe0nQ&controls=0"
-                  title="Hospital Tour Video"
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                ></iframe> */}
-
                 <iframe
                   className="w-100 h-100 border-0 rounded-4"
                   src="https://www.youtube.com/embed/yHCsfTTe0nQ?autoplay=1&mute=1&loop=1&playlist=yHCsfTTe0nQ&controls=0"
@@ -156,8 +147,6 @@ const HeroSection = () => {
                       "linear-gradient(45deg, rgba(30, 64, 175, 0.1) 0%, rgba(8, 145, 178, 0.1) 100%)",
                   }}
                 ></div>
-
-                {/* Info Card */}
                 {/* Info Card */}
                 <div
                   className="position-absolute bottom-3 start-50 translate-middle-x"

@@ -8,9 +8,7 @@ import {
   Clock, 
   Search,
   Heart,
-  Brain,
   Bone,
-  Eye,
   Baby,
   Activity,
   Shield,
@@ -21,9 +19,7 @@ import {
   Calendar,
   FileText,
   CreditCard,
-  Globe,
-  Headphones,
-  Plus
+  Globe
 } from 'lucide-react';
 
 const Header = () => {
@@ -59,17 +55,6 @@ const Header = () => {
             { name: 'Hospital Management', href: '#', description: 'Medical breakthroughs', icon: Activity }
           ]
         },
-        // {
-        //   category: 'Recognition & Awards',
-        //   items: [
-        //     { name: 'JCI Accreditation', href: '#', description: 'International quality standards', icon: Award },
-        //     { name: 'NABH Certification', href: '#', description: 'National accreditation', icon: Shield },
-        //     { name: 'Awards & Recognition', href: '#', description: 'Excellence in healthcare', icon: Award },
-        //     { name: 'Patient Testimonials', href: '#', description: 'Success stories', icon: Heart },
-        //     { name: 'Media Coverage', href: '#', description: 'News and press releases', icon: FileText },
-        //     { name: 'Community Outreach', href: '#', description: 'Social responsibility', icon: Users }
-        //   ]
-        // }
       ]
     },
     {

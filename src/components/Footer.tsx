@@ -84,31 +84,7 @@ const Footer = () => {
                     </div>
                   </div>
                 ))}
-              </div>
-
-              {/* Social Media */}
-              {/* <div className="d-flex gap-3">
-                <a href="#" className="text-decoration-none">
-                  <div className="bg-primary bg-opacity-20 p-3 rounded-3 text-primary hover-scale">
-                    <Facebook size={20} />
-                  </div>
-                </a>
-                <a href="#" className="text-decoration-none">
-                  <div className="bg-info bg-opacity-20 p-3 rounded-3 text-info hover-scale">
-                    <Twitter size={20} />
-                  </div>
-                </a>
-                <a href="#" className="text-decoration-none">
-                  <div className="bg-danger bg-opacity-20 p-3 rounded-3 text-danger hover-scale">
-                    <Instagram size={20} />
-                  </div>
-                </a>
-                <a href="#" className="text-decoration-none">
-                  <div className="bg-warning bg-opacity-20 p-3 rounded-3 text-warning hover-scale">
-                    <Youtube size={20} />
-                  </div>
-                </a>
-              </div> */}
+              </div>              
             </div>
           </div>
 
