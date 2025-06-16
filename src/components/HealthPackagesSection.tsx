@@ -161,6 +161,7 @@ const HealthCheckupPackages = () => {
   return (
     <div className="container py-5">
       <h2 className="text-center text-danger mb-4">Health Checkup Packages</h2>
+      <p className="package-text text-center ">We offer comprehensive health checkup packages which helps in the overall evaluation of the organs and systems of the body such as Heart, Breast, Eyes, ENT, Dental, Lungs, Kidneys, Liver, etc. You can get a full-body check-up done as per your requirement.</p>
 
       <div className="row g-4 justify-content-center">
         {packages.map((pkg, index) => (
@@ -180,7 +181,7 @@ const HealthCheckupPackages = () => {
                   </ul>
                 </div>
                 <div className="mt-3">
-                  <button className="btn btn-danger w-100 fw-semibold">
+                  <button className="btn btn-custom text-white w-100 fw-semibold">
                     📞 8051237036
                   </button>
                 </div>

@@ -1,4 +1,3 @@
-
 import {
   Phone,
   Mail,
@@ -33,11 +32,8 @@ const Footer = () => {
   ];
 
   const patientResources = [
-    { name: "Patient Portal", href: "#" },
     { name: "Insurance & Billing", href: "#" },
-    { name: "Medical Records", href: "#" },
     { name: "Visitor Information", href: "#" },
-    { name: "Patient Rights", href: "#" },
     { name: "Feedback & Complaints", href: "#" },
   ];
 
@@ -72,9 +68,7 @@ const Footer = () => {
               </div>
 
               <p className="text-light opacity-75 mb-4">
-                Leading multi-specialty hospital providing world-class
-                healthcare services with cutting-edge technology, compassionate
-                care, and a team of renowned specialists.
+                Ruban hospital is providing comprehensive medical resources under one roof, while maintaing the highest standards of excellence to achieve a stellar reputation of complete care giving.
               </p>
 
               {/* Achievements */}
@@ -231,15 +225,15 @@ const Footer = () => {
           </div>
         </div>
         <div className="d-flex justify-content-center">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d224.8321807314384!2d85.11170339431621!3d25.627672519527565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed582b586ec055%3A0x4bdbe8813044fc2d!2sRuban%20Memorial%20Hospital!5e0!3m2!1sen!2sin!4v1749949281230!5m2!1sen!2sin"
-          width="600"
-          height="450"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d224.8321807314384!2d85.11170339431621!3d25.627672519527565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed582b586ec055%3A0x4bdbe8813044fc2d!2sRuban%20Memorial%20Hospital!5e0!3m2!1sen!2sin!4v1749949281230!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
       </div>
 
@@ -255,7 +249,6 @@ const Footer = () => {
               </span>
             </p>
           </div>
-          
         </div>
       </div>
     </footer>

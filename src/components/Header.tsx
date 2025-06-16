@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logo from '../assets/logo/logo.png'
 import { 
   ChevronDown, 
   Stethoscope, 
@@ -47,24 +48,28 @@ const Header = () => {
           category: 'About Hospital',
           items: [
             { name: 'About Us', href: '#', description: 'Our mission, vision and values', icon: Heart },
-            { name: 'Our History', href: '#', description: '25+ years of excellence', icon: Clock },
-            { name: 'Leadership Team', href: '#', description: 'Meet our executive board', icon: Users },
-            { name: 'Vision & Mission', href: '#', description: 'Our commitment to healthcare', icon: Award },
-            { name: 'Quality & Safety', href: '#', description: 'Patient safety protocols', icon: Shield },
-            { name: 'Research & Innovation', href: '#', description: 'Medical breakthroughs', icon: Activity }
+            { name: 'Quality', href: '#', description: '25+ years of excellence', icon: Clock },
+            { name: 'Message from Managing Director', href: '#', description: 'Meet our executive board', icon: Users },
+            { name: 'Photo Gallery', href: '#', description: 'Our commitment to healthcare', icon: Award },
+            { name: 'Doctors', href: '#', description: 'Patient safety protocols', icon: Shield },
+            { name: 'Technology we use', href: '#', description: 'Medical breakthroughs', icon: Activity },
+            { name: 'Awards', href: '#', description: 'Medical breakthroughs', icon: Activity },
+            { name: 'Events', href: '#', description: 'Medical breakthroughs', icon: Activity },
+            { name: 'Health Blog', href: '#', description: 'Medical breakthroughs', icon: Activity },
+            { name: 'Hospital Management', href: '#', description: 'Medical breakthroughs', icon: Activity }
           ]
         },
-        {
-          category: 'Recognition & Awards',
-          items: [
-            { name: 'JCI Accreditation', href: '#', description: 'International quality standards', icon: Award },
-            { name: 'NABH Certification', href: '#', description: 'National accreditation', icon: Shield },
-            { name: 'Awards & Recognition', href: '#', description: 'Excellence in healthcare', icon: Award },
-            { name: 'Patient Testimonials', href: '#', description: 'Success stories', icon: Heart },
-            { name: 'Media Coverage', href: '#', description: 'News and press releases', icon: FileText },
-            { name: 'Community Outreach', href: '#', description: 'Social responsibility', icon: Users }
-          ]
-        }
+        // {
+        //   category: 'Recognition & Awards',
+        //   items: [
+        //     { name: 'JCI Accreditation', href: '#', description: 'International quality standards', icon: Award },
+        //     { name: 'NABH Certification', href: '#', description: 'National accreditation', icon: Shield },
+        //     { name: 'Awards & Recognition', href: '#', description: 'Excellence in healthcare', icon: Award },
+        //     { name: 'Patient Testimonials', href: '#', description: 'Success stories', icon: Heart },
+        //     { name: 'Media Coverage', href: '#', description: 'News and press releases', icon: FileText },
+        //     { name: 'Community Outreach', href: '#', description: 'Social responsibility', icon: Users }
+        //   ]
+        // }
       ]
     },
     {
@@ -72,36 +77,15 @@ const Header = () => {
       href: '#',
       children: [
         {
-          category: 'Cardiac Sciences',
+          category: 'Super Speciality',
           items: [
-            { name: 'Cardiology', href: '#', description: 'Heart disease treatment', icon: Heart },
-            { name: 'Cardiac Surgery', href: '#', description: 'Advanced heart procedures', icon: Heart },
-            { name: 'Interventional Cardiology', href: '#', description: 'Minimally invasive procedures', icon: Activity },
-            { name: 'Pediatric Cardiology', href: '#', description: 'Children heart care', icon: Baby },
-            { name: 'Heart Transplant', href: '#', description: 'Advanced cardiac procedures', icon: Heart },
-            { name: 'Cardiac Rehabilitation', href: '#', description: 'Recovery programs', icon: Activity }
-          ]
-        },
-        {
-          category: 'Neuro Sciences',
-          items: [
-            { name: 'Neurology', href: '#', description: 'Brain and nervous system', icon: Brain },
-            { name: 'Neurosurgery', href: '#', description: 'Brain and spine surgery', icon: Brain },
-            { name: 'Spine Surgery', href: '#', description: 'Spinal treatments', icon: Bone },
-            { name: 'Stroke Care', href: '#', description: 'Emergency stroke treatment', icon: Activity },
-            { name: 'Epilepsy Center', href: '#', description: 'Seizure management', icon: Brain },
-            { name: 'Neuro Rehabilitation', href: '#', description: 'Recovery programs', icon: Activity }
-          ]
-        },
-        {
-          category: 'Cancer Care',
-          items: [
-            { name: 'Medical Oncology', href: '#', description: 'Cancer treatment', icon: Shield },
-            { name: 'Surgical Oncology', href: '#', description: 'Cancer surgery', icon: Shield },
-            { name: 'Radiation Oncology', href: '#', description: 'Radiation therapy', icon: Activity },
-            { name: 'Bone Marrow Transplant', href: '#', description: 'Advanced cancer care', icon: Heart },
-            { name: 'Pediatric Oncology', href: '#', description: 'Children cancer care', icon: Baby },
-            { name: 'Cancer Screening', href: '#', description: 'Early detection programs', icon: Search }
+            { name: 'Urology and Nephrology', href: '#', description: 'Cancer treatment', icon: Shield },
+            { name: 'Cardiology and Cardiothoracic', href: '#', description: 'Cancer surgery', icon: Shield },
+            { name: 'Neurology and Neurosurgery', href: '#', description: 'Radiation therapy', icon: Activity },
+            { name: 'Orthopaedics, Joint Replacement & Arthroscopy', href: '#', description: 'Advanced cancer care', icon: Heart },
+            { name: 'Gaestroenterology', href: '#', description: 'Children cancer care', icon: Baby },
+            { name: 'Pulmonary and Sleep Medicine', href: '#', description: 'Early detection programs', icon: Search },
+            { name: 'Ruban Cancer Center', href: '#', description: 'Early detection programs', icon: Search },
           ]
         }
       ]
@@ -113,36 +97,15 @@ const Header = () => {
         {
           category: 'Medical Specialities',
           items: [
-            { name: 'Internal Medicine', href: '#', description: 'General medical care', icon: Stethoscope },
-            { name: 'Gastroenterology', href: '#', description: 'Digestive system care', icon: Activity },
-            { name: 'Pulmonology', href: '#', description: 'Lung and respiratory care', icon: Activity },
-            { name: 'Nephrology', href: '#', description: 'Kidney care', icon: Heart },
-            { name: 'Endocrinology', href: '#', description: 'Hormone disorders', icon: Activity },
-            { name: 'Rheumatology', href: '#', description: 'Joint and muscle care', icon: Bone }
+            { name: 'General Medicine', href: '#', description: 'General medical care', icon: Stethoscope },
+            { name: 'General Surgery & Laparoscopic Surgery', href: '#', description: 'Digestive system care', icon: Activity },
+            { name: 'Anesthesiology', href: '#', description: 'Lung and respiratory care', icon: Activity },
+            { name: 'Eye Care', href: '#', description: 'Kidney care', icon: Heart },
+            { name: 'ENT', href: '#', description: 'Hormone disorders', icon: Activity },
+            { name: 'Physiotherapy', href: '#', description: 'Joint and muscle care', icon: Bone },
+            { name: 'Radiology', href: '#', description: 'Joint and muscle care', icon: Bone }
           ]
-        },
-        {
-          category: 'Surgical Specialities',
-          items: [
-            { name: 'General Surgery', href: '#', description: 'Comprehensive surgical care', icon: Activity },
-            { name: 'Orthopedics', href: '#', description: 'Bone and joint surgery', icon: Bone },
-            { name: 'Plastic Surgery', href: '#', description: 'Reconstructive surgery', icon: Heart },
-            { name: 'Urology', href: '#', description: 'Urinary system surgery', icon: Activity },
-            { name: 'ENT Surgery', href: '#', description: 'Ear, nose, throat surgery', icon: Activity },
-            { name: 'Ophthalmology', href: '#', description: 'Eye care and surgery', icon: Eye }
-          ]
-        },
-        {
-          category: 'Women & Child Care',
-          items: [
-            { name: 'Obstetrics & Gynecology', href: '#', description: 'Women\'s health', icon: Heart },
-            { name: 'Pediatrics', href: '#', description: 'Children\'s healthcare', icon: Baby },
-            { name: 'Neonatology', href: '#', description: 'Newborn care', icon: Baby },
-            { name: 'Fertility & IVF', href: '#', description: 'Reproductive medicine', icon: Heart },
-            { name: 'High Risk Pregnancy', href: '#', description: 'Specialized maternity care', icon: Heart },
-            { name: 'Pediatric Surgery', href: '#', description: 'Children\'s surgery', icon: Baby }
-          ]
-        }
+        }        
       ]
     },
     {
@@ -150,36 +113,11 @@ const Header = () => {
       href: '#',
       children: [
         {
-          category: 'Diagnostic Services',
+          category: 'Hospital Facilities',
           items: [
-            { name: 'Radiology & Imaging', href: '#', description: 'Advanced imaging services', icon: Activity },
-            { name: 'Laboratory Services', href: '#', description: 'Comprehensive lab testing', icon: Stethoscope },
-            { name: 'Pathology', href: '#', description: 'Disease diagnosis', icon: Activity },
-            { name: 'Nuclear Medicine', href: '#', description: 'Advanced diagnostics', icon: Activity },
-            { name: 'Endoscopy', href: '#', description: 'Minimally invasive diagnosis', icon: Activity },
-            { name: 'Cardiac Catheterization', href: '#', description: 'Heart diagnostics', icon: Heart }
-          ]
-        },
-        {
-          category: 'Support Services',
-          items: [
-            { name: 'Emergency Services', href: '#', description: '24/7 emergency care', icon: Ambulance },
-            { name: 'ICU & Critical Care', href: '#', description: 'Intensive care units', icon: Heart },
-            { name: 'Operation Theaters', href: '#', description: 'State-of-the-art surgical suites', icon: Building },
-            { name: 'Blood Bank', href: '#', description: 'Safe blood storage', icon: Heart },
-            { name: 'Pharmacy', href: '#', description: '24/7 medication services', icon: Stethoscope },
-            { name: 'Ambulance Services', href: '#', description: 'Emergency transportation', icon: Ambulance }
-          ]
-        },
-        {
-          category: 'Patient Amenities',
-          items: [
-            { name: 'Patient Rooms', href: '#', description: 'Comfortable accommodation', icon: Building },
-            { name: 'Cafeteria & Food Court', href: '#', description: 'Nutritious meals', icon: Heart },
-            { name: 'Parking Facilities', href: '#', description: 'Convenient parking', icon: Building },
-            { name: 'ATM & Banking', href: '#', description: 'Financial services', icon: CreditCard },
-            { name: 'Wi-Fi & Internet', href: '#', description: 'Connectivity services', icon: Globe },
-            { name: 'Chapel & Prayer Room', href: '#', description: 'Spiritual care', icon: Heart }
+            { name: '24 x 7 Facilities', href: '#', description: 'Advanced imaging services', icon: Activity },
+            { name: 'Visiting Time', href: '#', description: 'Comprehensive lab testing', icon: Stethoscope },
+            { name: 'OPD timing', href: '#', description: 'Disease diagnosis', icon: Activity }
           ]
         }
       ]
@@ -191,23 +129,8 @@ const Header = () => {
         {
           category: 'Insurance Partners',
           items: [
-            { name: 'Cashless Treatment', href: '#', description: 'Direct billing facility', icon: CreditCard },
-            { name: 'Insurance Claims', href: '#', description: 'Claim processing support', icon: FileText },
-            { name: 'Corporate Health Plans', href: '#', description: 'Employee health coverage', icon: Users },
-            { name: 'Government Schemes', href: '#', description: 'Public health programs', icon: Shield },
-            { name: 'International Insurance', href: '#', description: 'Global coverage', icon: Globe },
-            { name: 'Pre-authorization', href: '#', description: 'Treatment approval', icon: FileText }
-          ]
-        },
-        {
-          category: 'Health Packages',
-          items: [
-            { name: 'Executive Health Checkup', href: '#', description: 'Comprehensive screening', icon: Heart },
-            { name: 'Preventive Health Packages', href: '#', description: 'Early detection programs', icon: Shield },
-            { name: 'Cardiac Health Packages', href: '#', description: 'Heart health screening', icon: Heart },
-            { name: 'Women\'s Health Packages', href: '#', description: 'Specialized women care', icon: Heart },
-            { name: 'Senior Citizen Packages', href: '#', description: 'Elderly care programs', icon: Users },
-            { name: 'Occupational Health', href: '#', description: 'Workplace health programs', icon: Building }
+            { name: 'Public Campanies on Panel', href: '#', description: 'Direct billing facility', icon: CreditCard },
+            { name: 'TPA & Insurance on Panel', href: '#', description: 'Insurance description', icon: FileText }
           ]
         }
       ]
@@ -219,23 +142,12 @@ const Header = () => {
         {
           category: 'Medical Tourism',
           items: [
-            { name: 'Treatment Packages', href: '#', description: 'Comprehensive care packages', icon: Globe },
-            { name: 'Visa Assistance', href: '#', description: 'Travel documentation help', icon: FileText },
-            { name: 'Airport Transfers', href: '#', description: 'Transportation services', icon: Ambulance },
+            { name: 'Why Ruban', href: '#', description: 'Comprehensive care packages', icon: Globe },
+            { name: 'Food Guide', href: '#', description: 'Travel documentation help', icon: FileText },
             { name: 'Accommodation', href: '#', description: 'Patient and family lodging', icon: Building },
-            { name: 'Language Interpreters', href: '#', description: 'Multi-language support', icon: Users },
-            { name: 'Currency Exchange', href: '#', description: 'Financial services', icon: CreditCard }
-          ]
-        },
-        {
-          category: 'Support Services',
-          items: [
-            { name: 'International Coordinator', href: '#', description: 'Dedicated support team', icon: Headphones },
-            { name: 'Medical Records Transfer', href: '#', description: 'Seamless information sharing', icon: FileText },
-            { name: 'Follow-up Care', href: '#', description: 'Continued support', icon: Heart },
-            { name: 'Telemedicine', href: '#', description: 'Remote consultations', icon: Phone },
-            { name: 'Cultural Support', href: '#', description: 'Culturally sensitive care', icon: Globe },
-            { name: 'Insurance Coordination', href: '#', description: 'International coverage', icon: Shield }
+            { name: 'Admission Procedure', href: '#', description: 'Transportation services', icon: Ambulance },
+            { name: 'Payment Information', href: '#', description: 'Financial services', icon: CreditCard},
+            { name: 'Services', href: '#', description: 'Financial services', icon: CreditCard }
           ]
         }
       ]
@@ -274,9 +186,9 @@ const Header = () => {
       <nav className={`navbar navbar-expand-lg sticky-top navbar-custom ${isScrolled ? 'shadow-custom' : ''}`}>
         <div className="container">
           <a className="navbar-brand d-flex align-items-center" href="#">
-            <div>
-              <h4 className="mb-0 font-display fw-bold text-danger">RUBAN</h4>
-              <small className="text-muted">Redefining Healthcare</small>
+            <div className='logo'>
+              {/* Adding hospital logo */}
+              <img className='logoImg' src={logo} alt="" />
             </div>
           </a>
 

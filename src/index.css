@@ -406,6 +406,7 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important;
 }
 
+
 /* Mobile responsiveness for floating buttons */
 @media (max-width: 768px) {
   .floating-buttons {
@@ -467,6 +468,7 @@ body {
 }
 
 @media (max-width: 576px) {
+  
   .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -479,4 +481,7 @@ body {
   .lead {
     font-size: 1.1rem;
   }
+}
+.logoImg{
+  width: 150px;
 }
