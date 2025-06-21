@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Heart, Plus } from 'lucide-react';
 
 const Preloader = () => {
   const [displayText, setDisplayText] = useState('');
