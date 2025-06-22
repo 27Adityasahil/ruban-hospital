@@ -105,7 +105,7 @@ const HeroSection = () => {
                 </button>
                 <button className="btn btn-outline-danger px-4 d-flex align-items-center py-2 rounded-pill">
                   <Phone size={18} className="me-2" />
-                  Emergency: +91 9876543210
+                  Emergency: +91 6123503100
                   <div
                     className="bg-danger rounded-circle d-inline-block ms-2"
                     style={{ width: "8px", height: "8px" }}
